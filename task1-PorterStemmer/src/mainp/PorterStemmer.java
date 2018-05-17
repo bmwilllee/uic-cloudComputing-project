@@ -439,7 +439,7 @@ public class PorterStemmer {
         for (int i = 0; i < stemFile.length; i++)
             try{
                 FileInputStream in = new FileInputStream(stemFile[i]);
-                FileWriter targetFileWriter = new FileWriter(stemFile[i] + "stemed");
+                FileWriter targetFileWriter = new FileWriter("output.txt");
                 try{
                     while(true){
                         int ch = in.read();
